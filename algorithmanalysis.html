@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="algorithmanalysis">
+<h2 style="color:green;">Select file to upload</h2>
+<p>
+	{% with messages = get_flashed_messages() %}
+	  {% if messages %}
+		<ul class=flashes>
+		{% for message in messages %}
+		  <li>{{ message }}</li>
+		{% endfor %}
+		</ul>
+	  {% endif %}
+	{% endwith %}
+</p>
+
+<form method="post" enctype="multipart/form-data">
+<dl>
+<p>
+<input type="file" name="file" autocomplete="off" required>	
+</p>
+</dl>
+<h2 style="color:green;">Select an algorithm to generate summary</h2>
+<input type="submit" name="submit_button" value="TextRank based on Sentence Overlap">
+&nbsp;   &nbsp;   &nbsp;   &nbsp; &nbsp;
+<input type="submit" name="submit_button" value="TextRank based on Sentence Position">
+&nbsp;   &nbsp;   &nbsp;   &nbsp; &nbsp;
+<input type="submit" name="submit_button" value="TextRank with Cosine Similarity">
+&nbsp;   &nbsp;   &nbsp;   &nbsp; &nbsp;
+<input type="submit" name="submit_button" value="TextRank with Jaccard Similarity">
+</form>
+<br>
+<br>
+<br>
+<center>
+<h3><i> TextRank Algorithm with Cosine Similarity is found to be most efficient. </i></h3>
+</center>
+</div>
+{% endblock %}
+
+
+

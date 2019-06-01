@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="home">
+    <center><h1 style="color:green;">About</h1></center>
+   <center><h3><p>The system helps you to generate the summary of Marathi text documents given by you.</p></h3></center>
+</div>
+<br>
+<div class="home">
+<center><h1 style="color:green;">How to use system?</h1></center>
+<center><img src="{{ url_for('static', filename = 'uiimage.png') }}" alt="Image" width="500" height="150"></center>
+</div>
+<br>
+<div class="home">
+<center><h1 style="color:green;">Services</h1></center>
+<center><h3><p><i><u>For Journalists: </u></i>If you prefer simplified information that summarizes the major events, then this Summarizer is for you.<br><br>
+<i><u>For Guide Publishers:</u></i> Help the students in quick revision. Summarize the most important points of a chapter.<br><br>
+<i><u>For Readers:</u></i> Save time, summarize your documents for a relevant and fast uptake of information.
+</p></h3></center>
+
+</div>
+<br>
+<div class="home">
+<center><h1 style="color:green;">Developed By</h1></center>
+<center><h3><p><i>Anushree Kar</i><br>
+<center><img src="{{ url_for('static', filename = '11.jpg') }}" alt="Image" width="200" height="200"></center>
+<center><i>Girija Mage</i></center><br>
+<center><img src="{{ url_for('static', filename = '22.jpg') }}" alt="Image" width="200" height="200"></center>
+<center><i>Nivedita Mathe</i></center><br>
+<center><img src="{{ url_for('static', filename = '33.jpg') }}" alt="Image" width="200" height="200"></center>
+<center><i>Apoorva Molwane</i></center><br>
+<center><img src="{{ url_for('static', filename = '44.jpg') }}" alt="Image" width="200" height="200"></center>
+</p></h3></center>
+
+
+
+
+<center><h1 style="color:green;">Guided By</h1></center>
+<center><h3><i>Prof. Jyoti Bangare</i></h3></center>
+</div>
+{% endblock %}

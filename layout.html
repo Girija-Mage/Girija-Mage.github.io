@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Marathi Summarizer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/main.css') }}">
+</head>
+<body>
+    <div class="container">
+        <center><h1 class="logo">Marathi Text Document Summarizer</h1></center>
+        <div class="topnav">
+            <a class="active" href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('summarygenerator') }}">Summary Generator</a>
+            <a href="{{url_for('algorithmanalysis')}}">Algorithm Analysis</a>
+        </div>
+      </div>
+    <div class="container">
+      {% block content %}
+      {% endblock %}
+    </div>
+  </body>
+</html>
+
+
+
+
+        
